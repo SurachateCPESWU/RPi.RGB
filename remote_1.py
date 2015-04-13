@@ -1,5 +1,6 @@
 #!/usr/bin/evm python
 import RPi.GPIO as GPIO
+import time
 import lirc
 
 #### Pin led  setup ###
@@ -84,3 +85,31 @@ while 1 :
         if((change_b >= 0)and(change_b <= 100)):
             show(b,change_b)
         print("R=%d G=%d B=%d"%(change_r,change_g,change_b))
+    elif(a==['key_7']):
+        change_r=0
+        change_g=0
+        change_b=0
+        for change_r in range(0,100,2):
+            show(r,change_r)
+            time.sleep(0.1)
+        for change_b in range(0,100,2):
+            show(b,change_b)
+            time.sleep(0.1)
+        for change_r in range(100,0,-2):
+            show(r,change_r)
+            time.sleep(0.1)
+        for change_g in range(0,100,2):
+            show(g,change_g)
+            time.sleep(0.1)
+        for change_b in range(100,0,-2):
+            show(b,change_b)
+            time.sleep(0.1)
+        for change_r in range(0,100,2):
+            show(r,change_r)
+            time.sleep(0.1)
+        for change_g in range(100,0,-2):
+            show(g,change_g)
+            time.sleep(0.1)
+        for change_r in range(100,0,-2):
+            show(r,change_r)
+            time.sleep(0.1)
