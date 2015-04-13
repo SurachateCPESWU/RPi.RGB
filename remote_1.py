@@ -95,21 +95,21 @@ while 1 :
         for change_b in range(0,100,2):
             show(b,change_b)
             time.sleep(0.1)
-        for change_r in range(100,0,-2):
+        for change_r in range(100,-2,-2):
             show(r,change_r)
             time.sleep(0.1)
         for change_g in range(0,100,2):
             show(g,change_g)
             time.sleep(0.1)
-        for change_b in range(100,0,-2):
+        for change_b in range(100,-2,-2):
             show(b,change_b)
             time.sleep(0.1)
         for change_r in range(0,100,2):
             show(r,change_r)
             time.sleep(0.1)
-        for change_g in range(100,0,-2):
+        for change_g in range(100,-2,-2):
             show(g,change_g)
             time.sleep(0.1)
-        for change_r in range(100,0,-2):
+        for change_r in range(100,-2,-2):
             show(r,change_r)
             time.sleep(0.1)
